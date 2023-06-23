@@ -1,0 +1,26 @@
+.container {
+    height: 90vh;
+}
+
+body {
+    background-color: #000;
+}
+
+@media (max-width: 930px) { 
+    img {
+        max-width: 35vh;
+    }
+}
+
+a {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+a:hover {
+    opacity: 0.85;
+}
+
+a:active {
+    transform: translate(2px, 4px);
+}
