@@ -6,6 +6,10 @@ div {
     font-family: 'Bodoni Moda';
 }
 
+a {
+    color: black;
+}
+
 .container {
     margin-left: 4rem;
     width: 10%;
@@ -31,6 +35,14 @@ div {
 .bottom {
     grid-column: 7 / -1;
     grid-row: 1;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+    justify-items: center;
+    row-gap: 15px;
 }
 
 /* @media (max-width: 930px) { 
