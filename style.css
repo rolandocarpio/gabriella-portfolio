@@ -1,26 +1,40 @@
-.container {
-    height: 90vh;
-}
-
 body {
-    background-color: #000;
+    background-color: #F3EEEA;
 }
 
-@media (max-width: 930px) { 
+div {
+    font-family: 'Bodoni Moda';
+}
+
+.container {
+    margin-left: 4rem;
+    width: 10%;
+}
+
+.text {
+    grid-column: 3 / span 2;
+}
+
+.image-stack {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    position: relative;
+}
+
+.top {
+    grid-column: 5 / span 6;
+    grid-row: 1;
+    padding-top: 10%;
+    z-index: 1;
+}
+
+.bottom {
+    grid-column: 7 / -1;
+    grid-row: 1;
+}
+
+/* @media (max-width: 930px) { 
     img {
         max-width: 35vh;
     }
-}
-
-a {
-    opacity: 1;
-    transition: 0.5s;
-}
-
-a:hover {
-    opacity: 0.85;
-}
-
-a:active {
-    transform: translate(2px, 4px);
-}
+} */
