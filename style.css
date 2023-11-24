@@ -10,7 +10,7 @@ a {
     color: black;
 }
 
-.container {
+.container-index {
     margin-left: 4rem;
     width: 10%;
 }
@@ -43,6 +43,21 @@ a {
     position: relative;
     justify-items: center;
     row-gap: 15px;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    position: relative;
+    justify-items: center;
+}
+
+.text-about {
+    grid-column: 3 / span 5;
+}
+
+.selfie {
+    grid-column: 9;
 }
 
 /* @media (max-width: 930px) { 
